@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>West End Financial</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js"></script>
+  <style>
+    .navbar-light .navbar-brand {
+        color: rgba(113, 114, 114, 0.993)
+    }
+    
+    /* .navbar-brand {
+        background-color: rgba(113, 114, 114, 0.993) ;
+    } */
+    
+    h1 {
+        margin-bottom: 15px;
+        font-family: Segoe UI;
+        font-weight: normal;
+        color:rgba(113, 114, 114, 0.993);
+    }
+    h2 {
+        margin-bottom: 15px;
+        font-family: Segoe UI;
+        font-weight: normal;
+        color:rgba(113, 114, 114, 0.993);
+    }
+    body {
+        background-color: white;
+    }
+    media-body { 
+        height:relative;
+        width:relative;
+        border:1px solid whitesmoke;
+        overflow:auto;
+        position: relative;
+        left:350px;
+        top:16px;
+        background-color:whitesmoke;
+    }
+    img { 
+        bottom: 16px;
+    }
+    .image-center {
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+    }
+    figure {
+      position: relative;
+      width: 100%;
+      height: 60%;
+      margin: 0!important;
+    }
+    fixed-wrap {
+      clip: rect(0, auto, auto, 0);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .embed-responsive {
+    position: relative;
+    display: block;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    }
+  </style>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand active" href="index.html">West End Financial</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="data_analysis.html">Data Analysis</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Machine Learning Models</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="neural_network.html">Neural Network</a>
+            <a class="dropdown-item" href="random_forest.html">Random Forest</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Machine Learning Code</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="neural_network_code.html">Neural Network</a>
+            <a class="dropdown-item" href="random_forest_code.html">Random Forest</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="model_comparison.html">Model Evaluation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about_us.html">About us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="banner" style="background-color: #444444;">
+    <div class="row">
+      <div class="col-lg-12 col-sm-12 col-xs-12 padding">
+        <div class="image justify-content-left">
+          <img src="../Images/Index_headerNEW7b.png" class="img-fluid center-block">
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br>
+  <!-- <div class="container-fluid">
+    <div class='embed-responsive' style='padding-bottom:150%'>
+      <object data='../Images/Model Eval2.pdf' type='application/pdf' width='100%' height='100%'></object>
+    </div>
+  </div> -->
+  <div class="row justify-content-center">
+    <div class="col-lg-5 col-sm-12 col-xs-12 padding p2">
+        <h2>Scoring</h2>
+        <div>
+          <hr class="my-4">
+        </div>
+        <p class="align-text-left">
+        The Project Team chose to score the model using a scorecard method by running a new regression to get the ten most important data points: Loan Amount, Checking Acct, Age, Loan Duration, Credit History, Employment, Savings Account, Installment Rate, Present Residence, and Job. 
+        </p>
+        <div class="image justify-content-center">
+          <img class="center-block img-fluid" src="../Static/Model_Comparison1.png">
+        </div>
+        </p>
+        <p>
+        Next, the variables, with equal weight levels, were binned using the weight of evidence (WOE) binning technique. The WOE is a simple formula that calculates the importance of an independent variable to the dependent variable.
+        </p>
+        <div class="image justify-content-center">
+          <img class="center-block img-fluid" src="../Images/Model_Comparison2.png">
+        </div>
+        <div class="image justify-content-center">
+          <img class="center-block img-fluid" src="../Images/Model_Comparison4.png">
+        </div>
+        The charts below show how well the model performed. It appears that the test and trainin¬g data are very similar.  Both the training and test data proved that the model can discern from a good-risk or bad-risk customer data 80% of the time.
+        <br>
+        <div class="image justify-content-center">
+          <img class="center-block img-fluid" src="../Images/Model_Comparison3.png">
+        </div>
+        <br>
+    </div>
+    <div class="col-lg-5 col-sm-12 col-xs-12 padding p2">    
+        <h2>Performance Evaluation</h2>
+        <div>
+          <hr class="my-4">
+        </div>
+        <p>
+        The performance evaluation ( perf_psi ) calculates the stability for the score and variables. It is used to run ongoing tests on the model to ensure the data received from the population does not change. This is important because overtime the data will change and the model should be tested and calibrated often. The formula is as follows:
+        </p>
+        <div class="image justify-content-center">
+          <img class="center-block img-fluid" src="../Images/Model_Comparison5.png">
+        </div>
+        <p>
+        When the PSI is less than 0.1 there is no real change in new data. When the PSI reaches 0.1 - 0.25 there is some minor change, and the model should be evaluated. Anything greater than 0.25 signifies a major change and model will need to be changed.
+        </p>
+        <div class="image justify-content-center">
+          <img class="center-block img-fluid" src="../Images/Model_Comparison6.png">
+        </div>
+        <p>
+        The PSI score for this model is fine at this time, however as previously stated, this should be tested often.
+        </p>
+        <br>
+        <h2>Risk Charts</h2>
+        <div>
+          <hr class="my-4">
+        </div>
+        <p>
+        The use of a risk chart is most helpful when evaluating models of fraud. As seen below:
+        </p>
+        <div class="image justify-content-center">
+          <img class="center-block img-fluid" src="../Images/Model_Comparison7.png">
+        </div>
+        <div class="image justify-content-center">
+          <img class="center-block img-fluid" src="../Images/Model_Comparison8.png">
+        </div>
+     </div>
+  </div>
+
+</body>
+
+</html>

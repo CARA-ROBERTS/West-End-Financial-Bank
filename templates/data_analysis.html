@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>West End Financial</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js"></script>
+  <style>
+    .navbar-light .navbar-brand {
+        color: rgba(113, 114, 114, 0.993)
+    }
+    
+    /* .navbar-brand {
+        background-color: rgba(113, 114, 114, 0.993) ;
+    } */
+    
+    h1 {
+        margin-bottom: 15px;
+        font-family: Segoe UI;
+        font-weight: normal;
+        color:rgba(113, 114, 114, 0.993);
+    }
+    h2 {
+        margin-bottom: 15px;
+        font-family: Segoe UI;
+        font-weight: normal;
+        color:rgba(113, 114, 114, 0.993);
+    }
+    body {
+        background-color: white;
+    }
+    media-body { 
+        height:relative;
+        width:relative;
+        border:1px solid whitesmoke;
+        overflow:auto;
+        position: relative;
+        font-family: Arial;
+        left:350px;
+        top:16px;
+        background-color:whitesmoke;
+    }
+    img { 
+        bottom: 16px;
+    }
+    figure {
+      position: relative;
+      width: 100%;
+      height: 60%;
+      margin: 0!important;
+    }
+    fixed-wrap {
+      clip: rect(0, auto, auto, 0);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    /* .iframe-container {
+      overflow: hidden;
+      // Calculated from the aspect ration of the content (in case of 16:9 it is 9/16= 0.5625)
+      padding-top: 56.25%;
+      position: relative;
+    }
+ 
+    .iframe-container iframe {
+      border: 0;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    } */
+    iframe{
+        width: 100%;
+        border: 2px solid #ccc;
+        position: relative;
+    }
+    /* iframe {
+       width: 1200px; /* It should not be 100% */
+       /* height: 900px; */
+       /* margin-left: auto;   /* Automatic margin from left */
+       /* margin-right: auto; Automatic margin from right
+      } */
+  </style>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+  <div class="container-fluid">
+    <!-- <a class="navbar-brand active" href="index.html">
+      <img src="../Images/Index_headerNEW1.png" alt="">
+    </a> -->
+    <a class="navbar-brand active" href="index.html">West End Financial</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="data_analysis.html">Data Analysis</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Machine Learning Models</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="neural_network.html">Neural Network</a>
+            <a class="dropdown-item" href="random_forest.html">Random Forest</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Machine Learning Code</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="neural_network_code.html">Neural Network</a>
+            <a class="dropdown-item" href="random_forest_code.html">Random Forest</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="model_comparison.html">Model Evaluation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about_us.html">About us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="banner" style="background-color: #444444;">
+    <div class="row">
+      <div class="col-lg-12 col-sm-12 col-xs-12 padding">
+        <div class="image justify-content-left">
+          <img src="../Images/Index_headerNEW2a.png" class="img-fluid center-block">
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <!-- <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-8 col-sm-12 col-xs-12 padding">
+        <div class="image justify-content-center">
+          <img src="../Images/Data_Analysis1.png" class="img-fluid center-block">
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <!-- <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 col-sm-12 col-xs-12 padding">
+        <div class="image justify-content-center">
+          <img class="center-block img-fluid" src="../Images/Data_Analysis1.png">
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <!-- <br>
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-lg-y ny-auto">  
+        <div class="single-post-content p-4">
+          <a class="link" href="https://public.tableau.com/views/FinalProject_15881275593510/WEF">Tableau Model Dashboard</a>
+        </div>
+      </div>
+    </div>
+  </div>-->
+  <br>
+  <div class="iframe-container">
+    <row justify-content-center>
+      <div class="col-7 mx-auto">
+      <iframe src="https://public.tableau.com/views/FinalProject_15881275593510/WEFDashboard?:display_count=y&:origin=viz_share_link:showVizHome=no&:embed=true" width=1368px height=800px></iframe>
+      </row>
+    </row>
+  </div>
+  <script>
+    // Selecting the iframe element
+    var iframe = document.getElementById("myIframe");
+    
+    // Adjusting the iframe height onload event
+    iframe.onload = function(){
+        iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+    }
+  </script>
+  <!-- <br>
+  <div class="container-fluid">
+    <row justify-content-center>
+      <div class="col-7  nx--auto">
+        <iframe src="https://public.tableau.com/views/FinalProject_15881275593510/WEFDashboard?:display_count=y&:origin=viz_share_link:showVizHome=no&:embed=true" width=1368px height=800px></iframe>
+      </div>
+    </row>
+  </div>  
+  <script>
+    // Selecting the iframe element
+    var iframe = document.getElementById("myIframe");
+    
+    // Adjusting the iframe height onload event
+    iframe.onload = function(){
+        iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+    }
+  </script> -->
+<br><br><br><br>
+
+<!-- <div class='tableauPlaceholder' id='viz1588376489675' style='position: relative'><noscript><a href='#'>
+  <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fi&#47;FinalProject_15881275593510&#47;WEFDashboard&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+    <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='FinalProject_15881275593510&#47;WEFDashboard' /><param name='tabs' value='no' />
+    <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fi&#47;FinalProject_15881275593510&#47;WEFDashboard&#47;1.png' /> 
+    <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' />
+    <param name='display_count' value='yes' /><param name='origin' value='viz_share_link:showVizHome=no' />
+  </object>
+</div>                
+<script type='text/javascript'>                    
+  var divElement = document.getElementById('viz1588376489675');
+  var vizElement = divElement.getElementsByTagName('object')[0];
+    if ( divElement.offsetWidth > 800 ) { 
+      vizElement.style.width='1657px';vizElement.style.height='888px';} 
+    else if ( divElement.offsetWidth > 500 ) { 
+      vizElement.style.width='1657px';vizElement.style.height='888px';} 
+    else { vizElement.style.width='100%';vizElement.style.height='2077px';}                     
+  var scriptElement = document.createElement('script');
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+</script> -->
+</body>
+
+</html>
+

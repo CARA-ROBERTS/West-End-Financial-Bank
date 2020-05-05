@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>West End Financial</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js"></script>
+  <style>
+    .navbar-light .navbar-brand {
+        color: rgba(113, 114, 114, 0.993)
+    }
+    
+    /* .navbar-brand {
+        background-color: rgba(113, 114, 114, 0.993) ;
+    } */
+    /* .dropdown {list-style: none; background: green; padding: 10px; display: inline-block;}
+    .dropdown .nav-link {color:#fff; text-decoration: none;}
+    .dropdown .dropdown-menu a{color: #000; text-decoration: none;}
+    .dropdown .btn {background: green; color:#fff;}
+    .dropdown .btn:hover {background: cyan; color:#000;}
+    .dropdown .btn:active {background: cyan; color:#000;}
+    .dropdown .btn:focus {background: cyan; color:#000;}
+    .dropdown-menu .dropdown-item {display: inline-block; width: 100%; padding: 10px 5px;}
+    .container .dropdown .dropdown-menu a:hover {
+        color: #fff;
+        background-color: #b91773;
+        border-color: #fff;
+    }     */
+    h1 {
+        margin-bottom: 15px;
+        font-family: Segoe UI;
+        font-weight: normal;
+        color:rgba(113, 114, 114, 0.993);
+    }
+    h2 {
+        margin-bottom: 15px;
+        font-family: Segoe UI;
+        font-weight: normal;
+        color:rgba(113, 114, 114, 0.993);
+    }
+    h3 {
+        margin-bottom: 15px;
+        font-family: Segoe UI;
+        font-weight: normal;
+        color:rgba(113, 114, 114, 0.993);
+    }
+    h4 {
+        margin-bottom: 15px;
+        font-family: Segoe UI;
+        font-weight: normal;
+        color:rgba(113, 114, 114, 0.993);
+    }
+    h5 {
+        margin-bottom: 15px;
+        font-family: Segoe UI;
+        font-weight: normal;
+        color:rgba(113, 114, 114, 0.993);
+    }
+    h6 {
+        margin-bottom: 15px;
+        font-family: Segoe UI;
+        font-weight: normal;
+        color:rgba(113, 114, 114, 0.993);
+    }
+    h7 {
+        margin-bottom: 15px;
+        font-family: Segoe UI;
+        font-weight: normal;
+        color:rgba(113, 114, 114, 0.993);
+    }
+    body {
+        background-color: white;
+    }
+    media-body { 
+        height:relative;
+        width:relative;
+        border:1px solid whitesmoke;
+        overflow:auto;
+        position: relative;
+        font-family: Arial;
+        left:350px;
+        top:16px;
+        background-color:whitesmoke;
+    }
+    img { 
+        bottom: 16px;
+    }
+    figure {
+      position: relative;
+      width: 100%;
+      height: 60%;
+      margin: 0!important;
+    }
+    fixed-wrap {
+      clip: rect(0, auto, auto, 0);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand active" href="index.html">West End Financial</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="data_analysis.html">Data Analysis</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Machine Learning Models</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="neural_network.html">Neural Network</a>
+            <a class="dropdown-item" href="random_forest.html">Random Forest</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Machine Learning Code</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="neural_network_code.html">Neural Network</a>
+            <a class="dropdown-item" href="random_forest_code.html">Random Forest</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="model_comparison.html">Model Evaluation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about_us.html">About us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="banner" style="background-color: #444444;">
+    <div class="row">
+    <div class="col-lg-8 col-sm-12 col-xs-12 padding">
+      <div class="image">
+        <img src="../Images/Index_headerNEW8.png" class="img-fluid center-block">
+      </div>
+    </div>
+    </div>
+  </div>
+  <br>
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-lg-10 col-sm-12 col-xs-12 padding">
+        <br>
+        <div class="image-wrapper float-left pr-4">
+          <img src="../Images/VU.png" alt="">
+        </div>
+        <div class="single-post-content-wrapper">
+          This website and Credit Approval App were created as the final project for the Vanderbilt University Data Analytics Boot Camp. Our Project Team collaborated on a Neural Network (NN) Model with the objective to read in credit data and create a model to predict an outcome of Credit Risk for potential applicants.<br>
+          <br>
+          Our NN model was based on previous customer Default patterns from our selected dataset, The Credit_Data_Original.csv. It contained individual prior histories containing 30 features such as: loan detail categories, purpose of loan, financial information, and personal information such as employment and years of residency.  In order to produce the Default model and analyze outcomes, we employed Jupiter Notebook to import key libraries: Pandas, Matplotlib.pyplot, Numpy, SkLearn, and Tensorflow.keras.<br>
+          <br>
+          Utilizing Random Forest, Feature Importance was sorted on our Credit_Data_Original.csv. This allowed the final Credit_Data_Revised.csv to be narrowed to the top ten features of importance to optimize results when training the NN model.
+          The Top 10 Features were derived from the questions on the Application Homepage.  These features were then used in the Default Model to run an applicant’s input and return an approval status.<br>
+          <br>
+          <b>Top 10 Features of Importance:</b> &nbsp; Loan Amount, Checking Acct Bal, Applicant Age, Loan Duration, Credit History, Years Employed, Savings Acct Bal, Install Rate, Years of Residency, Job Type<br>
+          <br>
+          <b>Software Tools Used: </b> &nbsp; Python Pandas, Python Matplotlib, SkLearn, R Studio, Tableau, HTML/CSS/Bootstrap, Javascript, Snagit, Microsoft Office 365<br>
+          <br>
+          <b>Website Logo Photo: </b> &nbsp; Stock photo ID:90382959 &nbsp; https://www.istockphoto.com/photo/nashville-skyline-gm90382959-4159728 &nbsp; License purchased: 04/28/20<br>
+        </div>
+      </div>
+    </div>
+    <br><br>
+    <div class="row justify-content-center">
+      <div class="col-lg-10 col-sm-12 col-xs-12 padding">
+      <div class="banner" style="background-color: #e6e6e9;">
+      <br>
+      <h1> &nbsp; Project Team</h1>
+      <div>
+        <hr class="my-4">
+      </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+    <div class="col-lg-3 col-sm-12 col-xs-12 padding">
+      <div class="image-wrapper float-left pr-4">
+        <img src="../Images/About_us1a.png" alt="image1">
+      </div>
+      <div class="single-post-content-wrapper">
+        <h4 class="text-center">Andrew McKinney</h4>
+        <h6 class="text-center">Credit Approval App</h4>
+        A data scientist and process engineer, Andrew McKinney currently works as a Process Owner at a leading aerospace manufacturer where he delivers statistically-driven value-add and operational directed solutions. Mr. McKinney has a Bachelor of Science in Chemical Engineering from the University of Tennessee Chattanooga and holds a Certification in Data Analytics from Vanderbilt University.<br>
+      </div>
+      <br>
+    </div>
+    <div class="col-lg-3 col-sm-12 col-xs-12 padding">
+      <div class="image-wrapper float-left pr-4">
+        <img src="../Images/About_us2a.png" alt="image2">
+      </div>
+      <div class="single-post-content-wrapper">
+        <h4 class="text-center">Cara Roberts</h4>
+        <h6 class="text-center">Machine Learning Models</h4>
+        Carrie serves as a Technical Consultant for Coligos. Prior to joining Coligos, Carrie was Senior Manager of Bidder Services at GovDeals.  Carrie has a B.S. in Information Technology obtained from Middle Tennessee State University, and an M.S. in Data Analytics obtained from Southern New Hampshire University, Manchester, NH.<br>
+      </div>
+      <br>
+    </div>
+    <br>
+    <div class="col-lg-3 col-sm-12 col-xs-12 padding">
+      <div class="image-wrapper float-left pr-4">
+        <img src="../Images/About_us3a.png" alt="image3">
+      </div>
+      <div class="single-post-content-wrapper">
+        <h4 class="text-center">Carrie McDowell</h4>
+        <h6 class="text-center">Model Evaluation</h4>
+        Carrie serves as a Technical Consultant for Coligos. Prior to joining Coligos, Carrie was Senior Manager of Bidder Services at GovDeals.  Carrie has a B.S. in Information Technology obtained from Middle Tennessee State University, an M.S. in Data Analytics from Southern New Hampshire University and a Certificate in Data Analytics from Vanderbilt University.
+      </div>
+      <br><br>             
+    </div>
+    </div>
+    <!-- <div>
+      <hr class="my-4">
+    </div> -->
+    <div class="row justify-content-center">
+    <div class="col-lg-3 col-sm-12 col-xs-12 padding">
+      <div class="image-wrapper float-left pr-4">
+        <img src="../Images/About_us4a.png" alt="image4">
+      </div>
+      <div class="single-post-content-wrapper">
+        <h4 class="text-center">David Winton</h4>
+        <h6 class="text-center">Website Development</h4>
+        David is a Senior Instructional Designer and Trainer with 14 years in applying adult learning theory to analyze, design, develop, implement, deliver and evaluate ILT, blended, and online training for adult learners. He has a Graduate Certificate in Instructional Design from the University of Wisconsin-Stout, as well as a Certificate in Data Analytics from Vanderbilt University and a B.A. in Communications from the Univeristy of Alabama.<br>
+      </div>
+      <br>
+    </div>
+    <div class="col-lg-3 col-sm-12 col-xs-12 padding">
+      <div class="image-wrapper float-left pr-4">
+        <img src="../Images/About_us5a.png" alt="image5">
+      </div>
+      <div class="single-post-content-wrapper">
+        <h4 class="text-center">JoTing Wong</h4>
+        <h6 class="text-center">Data Analysis</h5>      
+        Ms. JoTing Wong, is currently employed at a Fortune 500 medical company in the position of Business Intelligence Analyst Lead.  She provides data, reports and visualizations to support company with decision makings.  Ms. Wong has a bachelors degree from Tennessee State University in Business Information Systems and a Certificate in Data Analytics from Vanderbilt University.
+      </div>
+    </div>
+    </div>
+    </div>
+  </div>
+</div>
+<br><br>
+<br><br>
+</body>
+
+</html>
+

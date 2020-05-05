@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+  ​
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>West End Financial</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js"></script>
+    
+    <style>
+      .navbar-light .navbar-brand {
+          color: white
+      }
+      
+      .navbar-brand {
+          background-color: rgba(39, 184, 169, 0.692) ;
+      }
+      .bg-img {
+          /* The image used */
+          background-image: url("../Images/Index_headerNEW2.png");
+          min-height: 200px;
+
+          /* Center and scale the image nicely */
+          background-repeat: no-repeat;
+          background-size: cover;
+
+          /* Needed to position the navbar */
+          position: sticky;
+      }
+      
+      h1 {
+          margin-bottom: 15px;
+          font-family: Segoe UI;
+          font-weight: normal;
+          color:rgba(113, 114, 114, 0.993);
+      }
+      h2 {
+          margin-bottom: 15px;
+          font-family: Segoe UI;
+          font-weight: normal;
+          color:rgba(113, 114, 114, 0.993);
+      }
+      body {
+          background-color: white;
+      }
+      img { 
+          bottom: 16px;
+      }
+      fixed-wrap {
+        clip: rect(0, auto, auto, 0);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  ​
+  </head>
+​
+
+
+
+  <body>
+
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #444444;"> -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+      <!-- @TODO: What does this container fluid go to? -->
+      <div class="container-fluid">
+        <!-- <a class="navbar-brand active fluid" href="index.html">
+          <img src="../Images/Index_headerNEW1.png" alt="">
+        </a> -->
+      <!-- <a class="navbar-brand active" href="index.html">Data Analytics Boot Camp Final Project</a> -->
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="data_analysis.html">Data Analysis</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Machine Learning Models</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="neural_network.html">Neural Network</a>
+              <a class="dropdown-item" href="random_forest.html">Random Forest</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Model Code</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="neural_network_code.html">Neural Network</a>
+              <a class="dropdown-item" href="random_forest_code.html">Random Forest</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="model_comparison.html">Model Evaluation</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="data_analysis.html">About us</a>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+
+    <!-- Head Line Banner -->
+    <div class="banner" style="background-color: #444444;">
+      <div class="row">
+        <div class="col-lg-12 col-sm-12 col-xs-12 padding">
+          <div class="image justify-content-left">
+            <img src="../Images/Index_headerNEW1b.png" class="img-fluid center-block">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+
+    <!-- User Form -->
+    <div class="container-fluid h-100" style="max-width: 400px;">
+      <div class="row justify-content-center align-items-left h-100">
+
+        <form class="well form-horizontal" action="/form_submit" method="post"  id="contact_form">
+          <fieldset>
+            
+          <!-- Form Name -->
+          <legend>
+              <center>
+              <h2>
+                <b>Credit Approval Form</b>
+              </h2>
+            </center>
+          </legend>
+          <br>
+
+          <!-- Text input-->
+          <div class="form-group">
+
+            <label class="col-lg-12 control-label">Credit Amount</label>
+            <div class="col-lg-12 inputGroupContainer">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                <input name="AMOUNT" placeholder="Amount of Loan in USD" class="form-control" type="text">
+              </div>
+            </div>
+            <br>
+
+            <label class="col-lg-12 control-label">Credit Duration</label>
+            <div class="col-lg-12 inputGroupContainer">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                <input name="DURATION" placeholder="Desired Loan Duration in Months" class="form-control" type="text">
+              </div>
+            </div>
+            <br>
+
+            <label class="col-lg-12 control-label">Installment Rate</label>
+            <div class="col-lg-12 inputGroupContainer">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                <input name="INSTALL_RATE" placeholder="% of Disposable Income for Payments" class="form-control" type="text">
+              </div>
+            </div>
+            <br>
+
+            <label class="col-lg-12 control-label" >Applicant's Age</label>
+            <div class="col-lg-12 inputGroupContainer">
+              <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+              <input name="AGE" placeholder="Applicant Age in Years" class="form-control"  type="text">
+              </div>
+            </div>
+            <br>
+
+            <label class="col-lg-12 control-label">Years at Present Residency</label>
+            <div class="col-lg-12 selectContainer">
+              <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                  <select name="PRESENT_RESIDENT" class="form-control selectpicker">
+                    <option value="">Select Years of Residency</option>
+                    <option value=0>Less than 1 yr</option>
+                    <option value=1>1 yr to 2 yrs</option>
+                    <option value=2>2 yrs to 3 yrs</option>
+                    <option value=3>More than 4 yrs</option>
+                  </select>
+              </div>
+            </div>
+            <br>
+
+            <label class="col-lg-12 control-label">Years at Current Employer</label>
+            <div class="col-lg-12 selectContainer">
+              <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                  <select name="EMPLOYMENT" class="form-control selectpicker">
+                    <option value="">Select Years Employed</option>
+                    <option value=0>Unemployed</option>
+                    <option value=1>Less than 1 yr</option>
+                    <option value=2>1 yr to 4 yrs</option>
+                    <option value=3>4 yrs to 7 yrs</option>
+                    <option value=4>More than 7 yrs</option>              
+                </select>
+              </div>
+            </div>
+            <br>
+
+            <label class="col-lg-12 control-label">Current Job Class</label>
+            <div class="col-lg-12 selectContainer">
+              <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                  <select name="JOB" class="form-control selectpicker">
+                    <option value="">Select Job Class</option>
+                    <option value=0>Unemployed</option>
+                    <option value=1>Unskilled employee</option>
+                    <option value=2>Skilled employee</option>
+                    <option value=3>Management/Self-Employed/Officer</option>
+                  </select>
+              </div>
+            </div>
+            <br>
+
+            <label class="col-lg-12 control-label">Credit History</label>
+            <div class="col-lg-12 selectContainer">
+              <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                  <select name="HISTORY" class="form-control selectpicker">
+                    <option value="">Select Credit History</option>
+                    <option value=0>No Credit History</option>
+                    <option value=1>No Late Payments with WEF</option>
+                    <option value=2>No Late Payments with Other Creditors</option>
+                    <option value=3>Have had Late Payments</option>
+                    <option value=4>Have Reoccuring Late Payments</option>
+                  </select>
+              </div>
+            </div>
+            <br>
+
+            <label class="col-lg-12 control-label">Checking Account Balance</label>
+            <div class="col-lg-12 selectContainer">
+              <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                  <select name="CHK_ACCT" class="form-control selectpicker">
+                    <option value="">Select Balance in USD</option>
+                    <option value=3>No Checking Account</option>
+                    <option value=0>Less than $0</option>
+                    <option value=1>$0 to $200</option>
+                    <option value=2>More than $200</option>
+                  </select>
+              </div>
+            </div>
+            <br>
+
+            <label class="col-lg-12 control-label">Savings Account Balance</label>
+            <div class="col-lg-12 selectContainer">
+              <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                  <select name="SAV_ACCT" class="form-control selectpicker">
+                    <option value="">Select Balance in USD</option>
+                    <option value=4>No Savings Account</option>
+                    <option value=0>Less than $100</option>
+                    <option value=1>$100 to $500</option>
+                    <option value=2>$500 to $1000</option>
+                    <option value=3>More than $1000</option>
+                  </select>
+              </div>
+            </div>
+            <br>
+
+
+            <!-- Extended Form Collapsable -->
+            <center>
+            <legend>
+              <h2>
+                <b><u>Extended Form</u></b>
+              </h2>
+            </legend>
+              <p>
+                Applicants who opt into our Extended Form have a better chance at pre-approval 
+                and may decrease processing time of an issued loan.
+              </p>
+              <p>
+                <i>Applicants are not required to complete or fully finish the extended form.</i>
+              </p>
+              <p>
+                <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                  Opt Into Extended Form
+                </a>
+              </p>
+            </center>
+
+
+            <!-- Extended Form -->
+            <div class="collapse multi-collapse" id="multiCollapseExample1">
+
+              <label class="col-lg-12 control-label">Purpose of Credit</label>
+              <div class="col-lg-12 selectContainer">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                    <select name="PURPOSE" class="form-control selectpicker">
+                      <option value="">Select Purpose of Loan</option>
+                      <option value="NEW_CAR">New Car</option>
+                      <option value="USED_CAR">Used Car</option>
+                      <option value="FURNITURE">Furniture</option>
+                      <option value="RADIO/TV">Radio / TV</option>
+                      <option value="EDUCATION">Education</option>
+                      <option value="RETRAINING">Retraining</option>
+                      <option value="OTHER">Other</option>
+                    </select>
+                </div>
+              </div>
+              <br>
+
+              <label class="col-lg-12 control-label">Sex & Relationship Status</label>
+              <div class="col-lg-12 selectContainer">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                    <select name="SEX_REL" class="form-control selectpicker">
+                      <option value="">Select Sex / Relationship Status</option>
+                      <option value="MALE_DIV">Male & Divorced</option>
+                      <option value="MALE_SINGLE">Male & Single</option>
+                      <option value="MALE_MAR_or_WID">Male & Married</option>
+                      <option value="MALE_MAR_or_WID">Male & Widdowed</option>
+                      <option value="OTHER">Female & Divorced</option>
+                      <option value="OTHER">Female & Single</option>
+                      <option value="OTHER">Female & Married</option>
+                      <option value="OTHER">Female & Widdowed</option>
+                    </select>
+                </div>
+              </div>
+              <br>
+
+              <label class="col-lg-12 control-label">Residence Status</label>
+              <div class="col-lg-12 selectContainer">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                    <select name="RES_STAT" class="form-control selectpicker">
+                      <option value="">Select Residence Ownership Status</option>
+                      <option value="RENT">Rent Current Residence</option>
+                      <option value="OWN_RES">Owns Current Residence</option>
+                      <option value="OTHER">Other</option>
+                    </select>
+                </div>
+              </div>
+              <br>
+
+              <label class="col-lg-12 control-label">Real Estate Status</label>
+              <div class="col-lg-12 selectContainer">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                    <select name="REAL_STAT" class="form-control selectpicker">
+                      <option value="">Select Real Estate Ownership Status</option>
+                      <option value="REAL_ESTATE">Owns Real Estate</option>
+                      <option value="PROP_UNKN_NONE">Do Not Own Real Estate</option>
+                      <option value="PROP_UNKN_NONE">Unsure of Ownership</option>
+                    </select>
+                </div>
+              </div>
+              <br>
+
+              <label class="col-lg-12 control-label">Foreign Worker Status</label>
+              <div class="col-lg-12 selectContainer">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                    <select name="FOREIGN" class="form-control selectpicker">
+                      <option value="">Select if you are a Foreign Worker</option>
+                      <option value="0">No</option>
+                      <option value="1">Yes</option>
+                    </select>
+                </div>
+              </div>
+              <br>
+
+              <label class="col-lg-12 control-label">Number of Dependents</label>
+              <div class="col-lg-12 inputGroupContainer">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                  <input name="NUM_DEPENDENTS" placeholder="Amount of Dependent Individuals" class="form-control" type="text">
+                </div>
+              </div>
+              <br>
+
+              <label class="col-lg-12 control-label">Telephone Ownership</label>
+              <div class="col-lg-12 selectContainer">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                    <select name="TELEPHONE" class="form-control selectpicker">
+                      <option value="">Select Telephone Ownership Status</option>
+                      <option value="0">Do Not Own a Telephone in Your Name</option>
+                      <option value="1">Owns a Telephone in Your Name</option>
+                    </select>
+                </div>
+              </div>
+              <br>
+
+              <label class="col-lg-12 control-label">Co-Applicant Status</label>
+              <div class="col-lg-12 selectContainer">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                    <select name="CO_APPLICANT" class="form-control selectpicker">
+                      <option value="">Select if you will have a Co-Applicant</option>
+                      <option value="0">No</option>
+                      <option value="1">Yes</option>
+                    </select>
+                </div>
+              </div>
+              <br>
+
+              <label class="col-lg-12 control-label">Guarantor Status</label>
+              <div class="col-lg-12 selectContainer">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                    <select name="GUARANTOR" class="form-control selectpicker">
+                      <option value="">Select if you will have a Guarantor</option>
+                      <option value="0">No</option>
+                      <option value="1">Yes</option>
+                    </select>
+                </div>
+              </div>
+              <br>
+
+              <label class="col-lg-12 control-label">Other Installment Plans</label>
+              <div class="col-lg-12 selectContainer">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                    <select name="OTHER_INSTALL" class="form-control selectpicker">
+                      <option value="">Select if you have any other installment plans</option>
+                      <option value="0">No</option>
+                      <option value="1">Yes</option>
+                    </select>
+                </div>
+              </div>
+              <br>
+
+              <label class="col-lg-12 control-label">Number of Existing WEF Credits</label>
+              <div class="col-lg-12 inputGroupContainer">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                  <input name="NUM_CREDITS" placeholder="Number of Existing WEF Credit Lines" class="form-control" type="text">
+                </div>
+              </div>
+              <br>
+
+            </div>
+
+            <!-- Form Submit Button -->
+            <label class="col-lg-12 control-label"></label>
+            <div class="col-lg-12">
+              <center>
+                <button type="submit" class="btn btn-warning" style="width: 150px; height: 50px;">
+                  SUBMIT 
+                  <!-- <span class="glyphicon glyphicon-send"></span> -->
+                </button>
+              </center>
+            </div>
+
+          </div>    ​
+        
+          </fieldset>
+        </form>
+
+      </div>
+    </div>
+
+  </body>
+
+</html>
