@@ -1,0 +1,6 @@
+# Trying to reduce the slug
+*.psd
+*.pdf
+*.png
+/test
+/spec
